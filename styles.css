@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('mapa-colombia.jpg') no-repeat center center fixed; /* Asegúrate de que la imagen esté en la misma carpeta que tu HTML */
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.8); /* Fondo semitransparente */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.header-img {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    position: absolute; /* Posiciona la imagen */
+    top: 50%; /* Centra verticalmente */
+    right: 20px; /* Ajusta la posición horizontal a la derecha */
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #18bc9c;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    position: relative;
+}
+
+h1::first-letter, h2::first-letter {
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px; /* Asegúrate de tener suficiente espacio en cada sección */
+    border-radius: 8px; /* Opcional: agregar bordes redondeados a las secciones */
+}
+
+/* Colores de fondo para cada sección */
+#inicio {
+    background-color: #ffcccc; /* Color de fondo para la sección de Inicio */
+}
+
+#sobre-mi {
+    background-color: #5DADE2; /* Color de fondo para la sección Sobre mí */
+}
+
+#servicios {
+    background-color: #ccccff; /* Color de fondo para la sección Servicios */
+}
+
+#proyectos {
+    background-color: #ffffcc; /* Color de fondo para la sección Proyectos */
+}
+
+#contacto {
+    background-color: #ffccff; /* Color de fondo para la sección Contacto */
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #18bc9c;
+}

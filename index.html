@@ -2,95 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <img src="logo_bta.jpg" alt="[Descripción de la imagen]" class="header-img">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página del Junior de Barranquilla</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: url('https://upload.wikimedia.org/wikipedia/en/7/78/Atl%C3%A9tico_Junior_logo.svg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            text-align: center;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem;
-            margin: 1rem;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Portafolio Personal de [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a la Página del Junior de Barranquilla</h1>
+        
+        <h1>[Tu Nombre]</h1>
+        
         <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <section id="home">
-        <h2>Inicio</h2>
-        <p>Este es el contenido de la sección de inicio.</p>
-    </section>
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>Este es el contenido de la sección sobre mí.</p>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Este es el contenido de la sección de contacto.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Página del Junior de Barranquilla</p>
-    </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    document.querySelector(link.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
+
+    <div class="container">
+        <section class="section" id="inicio">
+            
+            <h2>Inicio</h2>
+            <p>
+                ¡Bienvenido a mi portafolio personal! Soy [Tu Nombre], un ingeniero de sistemas especializado en [tu área de especialización]. Aquí podrás conocer más sobre mí, los servicios que ofrezco, algunos de mis proyectos destacados y cómo ponerte en contacto conmigo.
+            </p>
+        </section>
+
+        <section class="section" id="sobre-mi">
+            <img src="logo_bta.jpg" alt="[Descripción de la imagen]" class="header-img">
+            background-color: RED
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un apasionado de la tecnología con [X] años de experiencia en el campo de la ingeniería de sistemas. Me especializo en [menciona tus habilidades principales] y tengo una sólida formación académica en [tu campo de estudio]. Me esfuerzo por ofrecer soluciones innovadoras y eficientes para mis clientes.
+            </p>
+        </section>
+
+        <section class="section" id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Desarrollo de Software a Medida</li>
+                <li>Consultoría en Tecnologías de la Información</li>
+                <li>Implementación de Sistemas y Redes</li>
+                <li>Seguridad Informática</li>
+                <li>Administración de Bases de Datos</li>
+                <li>Soporte Técnico y Mantenimiento</li>
+            </ul>
+        </section>
+
+        <section class="section" id="proyectos">
+            <h2>Proyectos</h2>
+            <p>
+                A continuación, se presentan algunos de los proyectos en los que he trabajado:
+            </p>
+            <ul>
+                <li>Proyecto 1: Descripción breve del proyecto y tus responsabilidades.</li>
+                <li>Proyecto 2: Descripción breve del proyecto y tus responsabilidades.</li>
+                <li>Proyecto 3: Descripción breve del proyecto y tus responsabilidades.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en ponerte en contacto:
+            </p>
+            <p>Email: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></p>
+            <p>Teléfono: [Tu Número de Teléfono]</p>
+        </section>
+    </div>
 </body>
 </html>
 
